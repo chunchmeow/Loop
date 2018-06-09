@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){   
+    $(".panel-title").children().each(
+        function(i) {
+    	$(this).prepend('<span class="active-shield">'+ (i+1).toString()+'</span> ');
+    });
+});
+</script>
+</head>
+<body>
+<style type="text/css">
+.active-shield {
+    background: url("../images/bg-plate-on.png") no-repeat scroll 0px -8px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+</style>
+<p>Generating an increment-numbered list in JQuery</p>
+<h4 class="panel-title">
+    <a href="">List Item</a>
+</h4>
+
+<h4 class="panel-title">
+    <a href="">List Item</a>
+</h4>
+
+<h4 class="panel-title">
+    <a href="">List Item</a>
+</h4>
+
+<h4 class="panel-title">
+    <a href="">List Item</a>
+</h4>
+</body>
+</html>
